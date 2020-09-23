@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lemonada', cursive;
+}
+
+body {
+  font-family: 'Lemonada', cursive;
+  background-color: #ebebeb;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+header h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.container1 {
+  width: 100%;
+}
+
+.container1 form {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container1 form label {
+  cursor: pointer;
+  padding: 15px 0px;
+}
+
+.container1 form .task_name {
+  width: 40%;
+  padding-right: 20px;
+}
+
+.container1 form .level, .container1 form .isComplete {
+  width: 15%;
+  padding-right: 20px;
+}
+
+.container1 form .button_submit {
+  width: 15%;
+  padding-right: 20px;
+  position: relative;
+}
+
+.container1 form .button_submit button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.container1 form .cancel {
+  width: 15%;
+  position: relative;
+}
+
+.container1 form .cancel button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.container1 .input_search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container1 .input_search input {
+  width: 100%;
+  background-color: #ebebeb;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
+}
+
+.container1 .input_search input:focus {
+  outline: none;
+}
+
+.container1 .new_task {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container1 .new_task .new__task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container1 .new_task .new__task button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container1 .new_task .new__task button:focus {
+  outline: none;
+}
+
+.task {
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.task h2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.task table {
+  text-align: center;
+  border-top: none;
+  max-width: 100%;
+}
+
+.task table .index {
+  width: 50px;
+}
+
+.task table .name {
+  width: 50%;
+  padding: auto;
+}
+
+.task table .level_dsc {
+  padding: 5px 10px;
+  width: auto;
+  background-color: red;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.task table .status {
+  cursor: pointer;
+}
+
+.task table .status i {
+  padding: 10px;
+}
+
+.task table .status:hover i {
+  color: #91c441;
+}
+
+.task table .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.task table .action .edit, .task table .action .delete {
+  cursor: pointer;
+}
+
+.task table .action .edit i, .task table .action .delete i {
+  padding: 10px;
+}
+
+.task table .action .edit:hover i, .task table .action .delete:hover i {
+  color: #91c441;
+}
+
+@media screen and (max-width: 1200px) {
+  .container1 {
+    font-size: 12px;
+  }
+  .container1 .new__task {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container1 form {
+    position: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container1 form .task_name {
+    width: 50%;
+    padding-right: 20px;
+  }
+  .container1 form .level, .container1 form .isComplete {
+    width: 25%;
+    padding-right: 20px;
+  }
+  .container1 form .button_submit {
+    width: 50%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container1 form .button_submit button {
+    position: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: inherit;
+  }
+  .container1 form .cancel {
+    width: 50%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container1 form .cancel button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: inherit;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    font-size: 10px;
+  }
+  .task table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
